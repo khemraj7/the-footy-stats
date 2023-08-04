@@ -1,1 +1,61 @@
-<p>register works!</p>
+<div>
+  <div class="container ">
+    <div class="col-12 d-flex">
+      <div class="col-6 align-self-center">
+        <img src="../../../../assets/Football (1).png" alt="" style="width: 82%;">
+      </div>
+      <div class="col-6 mt-3">
+        <h1 class="text-center">
+          Registration
+        </h1>
+        <p class="fill-blank">Fill in this form to Register</p>
+        <form [formGroup]="form" class="p-3" (ngSubmit)="onSubmit()">
+
+          <div class="mt-4 input_fields ">
+            <mat-label class="label_fields">Username</mat-label>
+            <mat-form-field appearance="outline">
+              <img src="../../../../assets/ph_user-bold (1).png" alt="" class="img_login">
+              <input matInput type="text" placeholder="Enter username" formControlName="username">
+            </mat-form-field>
+          </div>
+          <div class="mt-4 input_fields">
+            <mat-label class="label_fields">Email</mat-label>
+            <mat-form-field appearance="outline">
+              <img src="../../../../assets/uil_lock.png" alt="" class="img_login">
+
+              <input matInput type="text" placeholder="Enter email" formControlName="email">
+            </mat-form-field>
+          </div>
+          <div class="mt-4 input_fields">
+            <mat-label class="label_fields">Password</mat-label>
+            <mat-form-field appearance="outline">
+              <img src="../../../../assets/uil_lock.png" alt="" class="img_login">
+
+              <input matInput type="text" placeholder="Enter Password" formControlName="password">
+            </mat-form-field>
+          </div>
+          <div class="mt-4 input_fields">
+            <mat-label class="label_fields">Confirm Password</mat-label>
+            <mat-form-field appearance="outline">
+              <img src="../../../../assets/uil_lock.png" alt="" class="img_login">
+
+              <input matInput type="text" placeholder="Enter Confirm password" formControlName="confirm">
+            </mat-form-field>
+          </div>
+          <div>
+            <br>
+            <button class=" btn_submit" mat-raised-button type="submit">Submit</button>
+          </div>
+
+
+          <p class="mt-2">already account ? <a routerLink="/login">Login</a> </p>
+        </form>
+
+        <p class="mt-2 text-center" style="color: #ccc;">Or Continue with</p>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>

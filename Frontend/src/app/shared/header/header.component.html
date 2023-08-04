@@ -3,20 +3,16 @@
     <img src="../../../assets/Logo.jpg" alt="Girl in a jacket">
   </div>
 
-    
-    <div class="header-right">
-        
-        
-      <a class="home">Home</a>
-      <a class="fields">Stats </a>
-      <a class="fields">Matches</a>
-      <a class="fields">Leagues</a>
-      <a class="fields">Predictions</a>
-      <button  class="register abc">Register</button> 
-       <button class="login abc"><img src="../../../assets/ion_log-in-outline.png" alt="">Login</button>
-     
-    </div>
+
+  <div class="header-right">
+    <a class="home" (click)="home()">Home</a>
+    <a class="fields" (click)="stats()">Stats </a>
+    <a class="fields" (click)="matches()">Matches</a>
+    <a class="fields" (click)="leagues()">Leagues</a>
+    <a class="fields" (click)="predictions()">Predictions</a>
+    <button class="register abc" (click)="register()">Register</button>
+    <button class="login abc" (click)="login()"><img src="../../../assets/ion_log-in-outline.png"
+        alt="">Login</button>
+
+  </div>
 </div>
-
-
-

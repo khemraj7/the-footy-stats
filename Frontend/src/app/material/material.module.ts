@@ -29,6 +29,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 
@@ -66,7 +67,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     CdkTableModule,
     MatButtonToggleModule,
     CdkAccordionModule,
-    MatTableModule
+    MatTableModule,
+    MatTabsModule
   ],
   exports: [
     MatButtonModule,
@@ -99,7 +101,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     CdkTableModule,
     MatButtonToggleModule,
     CdkAccordionModule,
-    MatTableModule
+    MatTableModule,
+    MatTabsModule
   ]
 })
 export class MaterialModule { }

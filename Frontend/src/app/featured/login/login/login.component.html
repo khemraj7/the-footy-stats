@@ -1,1 +1,41 @@
-<p>login works!</p>
+<div>
+    <div class="container">
+        <div class="col-12 d-flex login">
+            <div class="col-6">
+                <img src="../../../../assets/Football (1).png" alt="">
+            </div>
+            <div class="col-6 ">
+                <h1 class="text-center">
+                    Login
+                </h1>
+                <p class="fill-blank">To access more amazing features,Login here!</p>
+                <form [formGroup]="logForm" class="p-3" (ngSubmit)="onSubmit()">
+                    <mat-label class="label_fields">Email or Username</mat-label>
+                    <mat-form-field appearance="outline">
+                        <img src="../../../../assets/ph_user-bold (1).png" alt="" class="img_login">
+                        <input matInput type="text" placeholder="Enter email or username" formControlName="username">
+                    </mat-form-field>
+                        <mat-label class="label_fields">Password</mat-label>
+    
+                    <mat-form-field appearance="outline">
+                        <img src="../../../../assets/uil_lock.png" alt="" class="img_login">
+                        <input matInput type="text" placeholder="Enter password" formControlName="password">
+                    </mat-form-field>
+
+                    <span style="color: #ffffff; float: right;" (click)="forgetPassword()">Forgot Password?</span>
+                    <br><br><br>
+
+                    <button class="w-100"  style="background-color: #5A4DAC !important ; color: #ffffff;height: 50px;" mat-raised-button type="submit">Login</button>
+                    <p class="mt-2">New to Login <a routerLink="/register">Register Here</a> </p>
+                </form>
+    
+                <p class="mt-2 text-center" style="color: #ccc;">Or Continue with</p>
+     <div>
+        <img src="../../../../assets/" alt="">
+     </div>
+    
+            </div>
+    
+        </div>
+    </div>
+</div>
